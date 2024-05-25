@@ -2,11 +2,12 @@
 def escolhaPedraPapelTesoura(jogada):
     jkpon = ["pedra", "papel", "tesoura"]
     if jogada == "1":
-        return jkpon[0]
+        jogada = jkpon[0]
     elif jogada == "2":
-        return jkpon[1]
+        jogada = jkpon[1]
     elif jogada == "3":
-        return jkpon[2]
+        jogada = jkpon[2]
+    return jogada
 
 def calcularPartida(p1,p2):
 
@@ -47,7 +48,7 @@ for x in range(1,4):
     opcoes()
 
     Player1 = input("Player 1, selecione um dos valores [1] [2] [3] para jogar: ")
-    while not(Player1 in '123'):
+    while Player1 not in ['1','2','3']:
         print("Valor invalido!")
         opcoes()
         Player1 = input("Player 1, selecione um dos valores [1] [2] [3] para jogar: ")
@@ -56,7 +57,7 @@ for x in range(1,4):
     opcoes()
 
     Player2 = input("Player 2, selecione um dos valores [1] [2] [3] para jogar: ")
-    while not(Player2 in '123'):
+    while Player2 not in ['1','2','3']:
         print("Valor invalido!")
         opcoes()
         Player2 = input("Player 2, selecione um dos valores [1] [2] [3] para jogar: ")

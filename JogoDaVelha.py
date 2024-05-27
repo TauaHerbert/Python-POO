@@ -330,7 +330,6 @@ for x in range(9):
             else:
                 campo[0][1] = Fore.RED+"\033[1mO\033[0m"
                 carregarJogo(campo)
-                verJogador2(campo)
                 break
         elif jogador2 == "3":
             if campo[0][2] == Fore.RED+"\033[1mO\033[0m" or campo[0][2] == Fore.BLUE+"\033[1mX\033[0m":
@@ -340,7 +339,6 @@ for x in range(9):
             else:
                 campo[0][2] = Fore.RED+"\033[1mO\033[0m"
                 carregarJogo(campo)
-                verJogador2(campo)
                 break
         elif jogador2 == "4":
             if campo[1][0] == Fore.RED+"\033[1mO\033[0m" or campo[1][0] == Fore.BLUE+"\033[1mX\033[0m":
@@ -350,7 +348,6 @@ for x in range(9):
             else:
                 campo[1][0] = Fore.RED+"\033[1mO\033[0m"
                 carregarJogo(campo)
-                verJogador2(campo)
                 break
         elif jogador2 == "5":
             if campo[1][1] == Fore.RED+"\033[1mO\033[0m" or campo[1][1] == Fore.BLUE+"\033[1mX\033[0m":
